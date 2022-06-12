@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pathfinding by Osman Avcı</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    
+    
+</head>
+<body>
+  <style>
+    body{
+      background:#f5f8fa
+    }
+    @media (min-width: 1200px) {.container{
+      max-width: 1200px;
+    }}
+  </style>
+  
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="/index.html">Pathfinding</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="/index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/visual/index.html">Application</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Algorithms
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="/pages/A-Star Algorithm.html">A* Algorithm</a></li>
+                  <li><a class="dropdown-item" href="/pages/IDA-Star Algorithm.html">IDA* Algorithm</a></li>
+                  <li><a class="dropdown-item" href="/pages/Breadth-First Search Algorithm.html">Breadth-First Algorithm</a></li>
+                  <li><a class="dropdown-item" href="/pages/Best-First Search Algorithm.html">Best-First Algorithm</a></li>
+                  <li><a class="dropdown-item" href="/pages/Dijkstra Algorithm.html">Dijkstra Algorithm</a></li>
+                </ul>
+              </li>
+              
+                </ul>
+              
+             
+            </ul>
+            
+          </div>
+        </div>
+      </nav>
+      <h1><mb-5></mb-5></h1>
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <div class="card" style="width: 18rem;">
+              <img src="/visual/lib/logos/logo1.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Suleyman Demirel University</h5>
+                <p class="card-text">Suleyman Demirel University 2021-2022 Final Project</p>
+              </div>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">Created by Osman Avci</li>
+                
+              </ul>
+              <div class="card-body">
+                <a href="https://w3.sdu.edu.tr/" class="card-link">Turkish</a>
+                <a href="https://international.sdu.edu.tr/" class="card-link">International</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 ">
+            <div class="card mb-3">
+              
+              <div class="card-body">
+                <h5 class="card-title">Manhattan Distance</h5>
+                <p class="card-text">Manhattan distance is a distance metric between two points in a N dimensional vector space. It is the sum of the lengths of the projections of the line segment between the points onto the coordinate axes. In simple terms, it is the sum of absolute difference between the measures in all dimensions of two points.</p>
+                <img src="/visual/lib/logos/Manhattan.png" class="card-img-bottom" alt="">
+              </div>
+            </div>
+
+            <div class="card mb-3">
+              
+              <div class="card-body">
+                <h5 class="card-title">Euclidean Distance</h5>
+                <p class="card-text">In mathematics, the Euclidean distance between two points in Euclidean space is the length of a line segment between the two points. It can be calculated from the Cartesian coordinates of the points using the Pythagorean theorem, therefore occasionally being called the Pythagorean distance. These names come from the ancient Greek mathematicians Euclid and Pythagoras, although Euclid did not represent distances as numbers, and the connection from the Pythagorean theorem to distance calculation was not made until the 18th century.
+
+                  The distance between two objects that are not points is usually defined to be the smallest distance among pairs of points from the two objects. Formulas are known for computing distances between different types of objects, such as the distance from a point to a line. In advanced mathematics, the concept of distance has been generalized to abstract metric spaces, and other distances than Euclidean have been studied. In some applications in statistics and optimization, the square of the Euclidean distance is used instead of the distance itself.</p>
+                  <img src="/visual/lib/logos/euclidian.png" class="card-img-bottom" alt="">
+              </div>
+            </div>
+
+            <div class="card mb-3">
+              
+              <div class="card-body">
+                <h5 class="card-title">Octile Distance</h5>
+                <p class="card-text">The octile distance is used to estimate the distance between two cells heuristically. The respective lengths of cardinal and diagonal moves are 1 and 1.414. A matrix the same size as the map is used to store all the grid points. Point (x, y) represents the point at the intersection of xth column and yth row in the grid map with (1, 1) as the point in the upper left corner. The octile distance between p(x, y) and p′(x′, y′) is:</p>
+                
+                <img src="/visual/lib/logos/octile.png" class="card-img-bottom" alt="">
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Chebyshev Distance</h5>
+                <p class="card-text">Chebyshev distance is a distance metric which is the maximum absolute distance in one dimension of two N dimensional points. It has real world applications in Chess, Warehouse logistics and many other fields.
+
+                  It is, also, known as Tchebychev distance, maximum metric, chessboard distance and L∞ metric.
+                  
+                  It is named after Pafnuty Chebyshev, a Russian mathematician who is the recipient of the Demidov Prize and is known for his work on probability, statistics, mechanics, analytical geometry and number theory.</p>
+                
+                <img src="/visual/lib/logos/Chebyshev.png" class="card-img-bottom" alt="">
+              </div>
+              
+            </div>
+            
+
+           
+
+            
+          </div>
+          
+            
+              <div class="col">
+                <div class="card w-75">
+                  <div class="card-body">
+                    <h5 class="card-title">Distances</h5>
+                    <p class="card-text">Manhattan, Euclidean, Octile, Chebyshev Distances</p>
+                    <a href="/pages/Distances.html" class="btn btn-primary">See More</a>
+                  </div>
+                </div>
+              </div>
+            
+          
+        </div>
+        </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+</body>
+</html>

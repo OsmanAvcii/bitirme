@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pathfinding by Osman Avcı</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    
+    
+</head>
+<body>
+  <style>
+    body{
+      background:#f5f8fa
+    }
+    @media (min-width: 1200px) {.container{
+      max-width: 1200px;
+    }}
+  </style>
+  
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="/index.html">Pathfinding</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="/index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/visual/index.html">Application</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Algorithms
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="/pages/A-Star Algorithm.html">A* Algorithm</a></li>
+                  <li><a class="dropdown-item" href="/pages/IDA-Star Algorithm.html">IDA* Algorithm</a></li>
+                  <li><a class="dropdown-item" href="/pages/Breadth-First Search Algorithm.html">Breadth-First Algorithm</a></li>
+                  <li><a class="dropdown-item" href="/pages/Best-First Search Algorithm.html">Best-First Algorithm</a></li>
+                  <li><a class="dropdown-item" href="/pages/Dijkstra Algorithm.html">Dijkstra Algorithm</a></li>
+                </ul>
+              </li>
+              
+                </ul>
+              
+             
+            </ul>
+            
+          </div>
+        </div>
+      </nav>
+      <h1><mb-5></mb-5></h1>
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <div class="card" style="width: 18rem;">
+              <img src="/visual/lib/logos/logo1.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Suleyman Demirel University</h5>
+                <p class="card-text">Suleyman Demirel University 2021-2022 Final Project</p>
+              </div>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">Created by Osman Avci</li>
+                
+              </ul>
+              <div class="card-body">
+                <a href="https://w3.sdu.edu.tr/" class="card-link">Turkish</a>
+                <a href="https://international.sdu.edu.tr/" class="card-link">International</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 ">
+            
+            <div class="card bg-dark text-white mb-3">
+              <div class="card-body">
+                <h5 class="card-title">A* Algorithm</h5>
+                <p class="card-text">A* is an informed search algorithm, or a best-first search, meaning that it is formulated in terms of weighted graphs: starting from a specific starting node of a graph, it aims to find a path to the given goal node having the smallest cost (least distance travelled, shortest time, etc.). It does this by maintaining a tree of paths originating at the start node and extending those paths one edge at a time until its termination criterion is satisfied.
+
+                  At each iteration of its main loop, A* needs to determine which of its paths to extend. It does so based on the cost of the path and an estimate of the cost required to extend the path all the way to the goal. Specifically, A* selects the path that minimizes
+                  
+                  f(n)=g(n)+h(n)}
+                  where n is the next node on the path, g(n) is the cost of the path from the start node to n, and h(n) is a heuristic function that estimates the cost of the cheapest path from n to the goal. A* terminates when the path it chooses to extend is a path from start to goal or if there are no paths eligible to be extended. The heuristic function is problem-specific. If the heuristic function is admissible – meaning that it never overestimates the actual cost to get to the goal –, A* is guaranteed to return a least-cost path from start to goal.
+                  
+                  Typical implementations of A* use a priority queue to perform the repeated selection of minimum (estimated) cost nodes to expand. This priority queue is known as the open set or fringe. At each step of the algorithm, the node with the lowest f(x) value is removed from the queue, the f and g values of its neighbors are updated accordingly, and these neighbors are added to the queue. The algorithm continues until a removed node (thus the node with the lowest f value out of all fringe nodes) is a goal node.[b] The f value of that goal is then also the cost of the shortest path, since h at the goal is zero in an admissible heuristic.
+                  
+                  The algorithm described so far gives us only the length of the shortest path. To find the actual sequence of steps, the algorithm can be easily revised so that each node on the path keeps track of its predecessor. After this algorithm is run, the ending node will point to its predecessor, and so on, until some node's predecessor is the start node. s an example, when searching for the shortest route on a map, h(x) might represent the straight-line distance to the goal, since that is physically the smallest possible distance between any two points. For a grid map from a video game, using the Manhattan distance or the octile distance becomes better depending on the set of movements available (4-way or 8-way). </p>
+                  
+                  If the heuristic h satisfies the additional condition h(x) ≤ d(x, y) + h(y) for every edge (x, y) of the graph (where d denotes the length of that edge), then h is called monotone, or consistent. With a consistent heuristic, A* is guaranteed to find an optimal path without processing any node more than once and A* is equivalent to running Dijkstra's algorithm with the reduced cost d'(x, y) = d(x, y) + h(y) − h(x).
+              </div>
+              
+            </div>
+
+           
+
+            
+          </div>
+          <div class="col">
+            <div class="col">
+              <div class="card w-75">
+                <div class="card-body">
+                  <h5 class="card-title">Distances</h5>
+                  <p class="card-text">Manhattan, Euclidean, Octile, Chebyshev Distances</p>
+                  <a href="/pages/Distances.html" class="btn btn-primary">See More</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+</body>
+</html>

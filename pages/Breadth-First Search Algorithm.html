@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pathfinding by Osman Avcı</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    
+    
+</head>
+<body>
+  <style>
+    body{
+      background:#f5f8fa
+    }
+    @media (min-width: 1200px) {.container{
+      max-width: 1200px;
+    }}
+  </style>
+  
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="/index.html">Pathfinding</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="/index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/visual/index.html">Application</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Algorithms
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="/pages/A-Star Algorithm.html">A* Algorithm</a></li>
+                  <li><a class="dropdown-item" href="/pages/IDA-Star Algorithm.html">IDA* Algorithm</a></li>
+                  <li><a class="dropdown-item" href="/pages/Breadth-First Search Algorithm.html">Breadth-First Algorithm</a></li>
+                  <li><a class="dropdown-item" href="/pages/Best-First Search Algorithm.html">Best-First Algorithm</a></li>
+                  <li><a class="dropdown-item" href="/pages/Dijkstra Algorithm.html">Dijkstra Algorithm</a></li>
+                </ul>
+              </li>
+              
+                </ul>
+              
+             
+            </ul>
+            
+          </div>
+        </div>
+      </nav>
+      <h1><mb-5></mb-5></h1>
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <div class="card" style="width: 18rem;">
+              <img src="/visual/lib/logos/logo1.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Suleyman Demirel University</h5>
+                <p class="card-text">Suleyman Demirel University 2021-2022 Final Project</p>
+              </div>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">Created by Osman Avci</li>
+                
+              </ul>
+              <div class="card-body">
+                <a href="https://w3.sdu.edu.tr/" class="card-link">Turkish</a>
+                <a href="https://international.sdu.edu.tr/" class="card-link">International</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 ">
+            
+
+            
+
+            <div class="card bg-dark text-white mb-3">
+              
+              <div class="card-body">
+                <h5 class="card-title">Breadth-First Search Algorithm</h5>
+                <p class="card-text">Breadth-first search (BFS) is an algorithm for searching a tree data structure for a node that satisfies a given property. It starts at the tree root and explores all nodes at the present depth prior to moving on to the nodes at the next depth level. Extra memory, usually a queue, is needed to keep track of the child nodes that were encountered but not yet explored.
+
+                  For example, in a chess endgame a chess engine may build the game tree from the current position by applying all possible moves, and use breadth-first search to find a win position for white. Implicit trees (such as game trees or other problem-solving trees) may be of infinite size; breadth-first search is guaranteed to find a solution node if one exists.
+                  
+                  In contrast, (plain) depth-first search, which explores the node branch as far as possible before backtracking and expanding other nodes, may get lost in an infinite branch and never make it to the solution node. Iterative deepening depth-first search avoids the latter drawback at the price of exploring the tree's top parts over and over again. On the other hand, both depth-first algorithms get along without extra memory.
+                  
+                  Breadth-first search can be generalized to graphs, when the start node (sometimes referred to as a 'search key') is explicitly given, and precautions are taken against following a vertex twice.
+                  
+                  BFS and its application in finding connected components of graphs were invented in 1945 by Konrad Zuse, in his (rejected) Ph.D. thesis on the Plankalkül programming language, but this was not published until 1972. It was reinvented in 1959 by Edward F. Moore, who used it to find the shortest path out of a maze, and later developed by C. Y. Lee into a wire routing algorithm (published 1961).</p>
+                
+              </div>
+            </div>
+
+            
+
+            
+          </div>
+          <div class="col">
+            <div class="col">
+              <div class="card w-75">
+                <div class="card-body">
+                  <h5 class="card-title">Distances</h5>
+                  <p class="card-text">Manhattan, Euclidean, Octile, Chebyshev Distances</p>
+                  <a href="/pages/Distances.html" class="btn btn-primary">See More</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+</body>
+</html>
